@@ -373,13 +373,13 @@
                     <label class="block text-sm font-semibold mb-2">CashApp Link</label>
                     <input type="text" id="productCashApp" required 
                            class="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg focus:border-yellow-500 focus:outline-none text-white"
-                           placeholder="https://cash.app/$YourCashTag/25.00">
+                           placeholder="https://cash.app/$zachsmile/25.00">
                 </div>
                 <div>
                     <label class="block text-sm font-semibold mb-2">Payment QR/Image URL</label>
                     <input type="text" id="productPaymentImage" 
                            class="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg focus:border-yellow-500 focus:outline-none text-white"
-                           placeholder="zachsmail.jpg">
+                           placeholder="https://example.com/qr-code.png">
                     <p class="text-xs text-gray-400 mt-1">Tip: Use https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=YOUR_CASHAPP_LINK</p>
                 </div>
                 <div class="flex gap-3 pt-4">
@@ -414,7 +414,13 @@
             
             <div class="mt-6 text-center">
                 <h4 id="paymentProductName" class="text-xl font-semibold mb-2"></h4>
-                <p class="text-3xl font-bold logo-text mb-6" id="paymentProductPrice"></p>
+                
+                <!-- CashApp Payment Info -->
+                <div class="bg-gradient-to-r from-yellow-600 to-orange-500 p-4 rounded-lg mb-6">
+                    <p class="text-white text-sm font-semibold mb-1">Send Payment To:</p>
+                    <p class="text-white text-3xl font-bold display-font">$zachsmile</p>
+                    <p class="text-white text-2xl font-bold mt-2" id="paymentProductPrice"></p>
+                </div>
                 
                 <div class="qr-container mx-auto inline-block mb-6">
                     <img id="paymentQRImage" src="" alt="CashApp Payment" class="w-64 h-64 object-contain mx-auto">
@@ -422,13 +428,13 @@
                 
                 <div class="space-y-3 text-left bg-gray-800 p-4 rounded-lg mb-6">
                     <p class="text-sm text-gray-300">
-                        <span class="font-semibold text-yellow-500">Step 1:</span> Scan the QR code with your CashApp
+                        <span class="font-semibold text-yellow-500">Step 1:</span> Open CashApp and send to <strong>$zachsmile</strong>
                     </p>
                     <p class="text-sm text-gray-300">
-                        <span class="font-semibold text-yellow-500">Step 2:</span> Confirm the amount
+                        <span class="font-semibold text-yellow-500">Step 2:</span> Enter the amount shown above
                     </p>
                     <p class="text-sm text-gray-300">
-                        <span class="font-semibold text-yellow-500">Step 3:</span> Complete payment
+                        <span class="font-semibold text-yellow-500">Step 3:</span> Add product name in note and complete payment
                     </p>
                 </div>
                 
@@ -452,8 +458,8 @@
                 price: 35.00,
                 description: "Premium cotton tee celebrating Black excellence and unity",
                 image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop",
-                cashAppLink: "https://cash.app/$YourCashTag/35.00",
-                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$YourCashTag/35.00"
+                cashAppLink: "https://cash.app/$zachsmile/35.00",
+                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$zachsmile/35.00"
             },
             {
                 id: 2,
@@ -462,8 +468,8 @@
                 price: 28.00,
                 description: "Embroidered snapback celebrating African heritage",
                 image: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=500&h=500&fit=crop",
-                cashAppLink: "https://cash.app/$YourCashTag/28.00",
-                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$YourCashTag/28.00"
+                cashAppLink: "https://cash.app/$zachsmile/28.00",
+                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$zachsmile/28.00"
             },
             {
                 id: 3,
@@ -472,8 +478,8 @@
                 price: 24.99,
                 description: "Inspirational collection of stories from the diaspora",
                 image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&h=500&fit=crop",
-                cashAppLink: "https://cash.app/$YourCashTag/24.99",
-                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$YourCashTag/24.99"
+                cashAppLink: "https://cash.app/$zachsmile/24.99",
+                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$zachsmile/24.99"
             },
             {
                 id: 4,
@@ -482,8 +488,8 @@
                 price: 18.00,
                 description: "Gold-rimmed ceramic mug with empowering message",
                 image: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=500&h=500&fit=crop",
-                cashAppLink: "https://cash.app/$YourCashTag/18.00",
-                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$YourCashTag/18.00"
+                cashAppLink: "https://cash.app/$zachsmile/18.00",
+                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$zachsmile/18.00"
             },
             {
                 id: 5,
@@ -492,8 +498,8 @@
                 price: 35.00,
                 description: "Celebrate natural beauty and Black pride",
                 image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&h=500&fit=crop",
-                cashAppLink: "https://cash.app/$YourCashTag/35.00",
-                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$YourCashTag/35.00"
+                cashAppLink: "https://cash.app/$zachsmile/35.00",
+                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$zachsmile/35.00"
             },
             {
                 id: 6,
@@ -502,8 +508,8 @@
                 price: 25.00,
                 description: "Vintage-style dad hat with heritage embroidery",
                 image: "https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?w=500&h=500&fit=crop",
-                cashAppLink: "https://cash.app/$YourCashTag/25.00",
-                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$YourCashTag/25.00"
+                cashAppLink: "https://cash.app/$zachsmile/25.00",
+                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$zachsmile/25.00"
             },
             {
                 id: 7,
@@ -512,8 +518,8 @@
                 price: 29.99,
                 description: "Ancient proverbs for modern living",
                 image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500&h=500&fit=crop",
-                cashAppLink: "https://cash.app/$YourCashTag/29.99",
-                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$YourCashTag/29.99"
+                cashAppLink: "https://cash.app/$zachsmile/29.99",
+                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$zachsmile/29.99"
             },
             {
                 id: 8,
@@ -522,8 +528,8 @@
                 price: 22.00,
                 description: "Luxury mug with gold-leaf African pattern",
                 image: "https://images.unsplash.com/photo-1517256673644-36ad11246d21?w=500&h=500&fit=crop",
-                cashAppLink: "https://cash.app/$YourCashTag/22.00",
-                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$YourCashTag/22.00"
+                cashAppLink: "https://cash.app/$zachsmile/22.00",
+                paymentImage: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://cash.app/$zachsmile/22.00"
             }
         ];
 
